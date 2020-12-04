@@ -151,9 +151,6 @@ body{
 .card:hover #sessoes{
     color: #951113;
 }
-.card:hover #descricaoCard3{
-    color: #951113;
-}
 .card:hover .comprar {
     background-color: #951113;
     color: #ffffff;
@@ -175,19 +172,12 @@ body{
     font-size: 1em;
 }
 
-/* estilização da descricao do serviço do card 3 que necessita de uma quebra de linha*/
-#descricaoCard3{
-    color: #D28E83;
-    font-size: 1em;
-    width: 82%;
-    margin-left:12% ;
-}
 
 /* descricao do numero de sessões de todos os cards */
 #sessoes{
     margin-top:-6%;
     color: #D28E83;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 /* estilização dos valores do serviço de todos os cards*/
@@ -353,11 +343,6 @@ body{
         height: 150vw;
         min-height: 0px;
     }
-    /* ajustando a quebra de linha do card 3 */
-    #descricaoCard3{
-        width: 100%;
-        margin-left: 3%;
-    }
     /* ajustando largura da div com os campos de compra */
     .dadosDaCompra{
         width: 70%;
@@ -423,6 +408,9 @@ body{
     /* definindo largura do texto da div acima*/
     #textoMelhoresPrecos{
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     /* definindo altura minima da div de produtos */
     .produtos{
@@ -430,7 +418,7 @@ body{
     }
     /* diminuindo tanhanho da borda das imagens dos cards */
     .imagemCard{
-        border: .5em solid white;
+        border: .7em solid white;
     }
     /* diminuindo tanhanho da borda das imagens dos cards */
     .cardsProdutos{ 
@@ -467,6 +455,7 @@ body{
         margin-top: 0%;
         border-radius: 22em 22em 22em 22em;
     }
+    
     /* ajuste na borda das imagens dos cards*/
     .imagemCard{
         margin-top: 1.5%;
