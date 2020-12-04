@@ -1,0 +1,541 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+}
+
+/* inicio do banner */
+
+/* Estilos da div banner e imgem de fundo  */
+.banner{
+    background-image: url(./assets/imagemDoBanner.png);
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 40vw; 
+    max-height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* div que engloba imagem do logo, e descrições da empresa*/
+.logoEDescricoes{
+    height: 70%;
+    width:35%;
+    max-width: 760px;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* logo do projeto */
+.logo{
+    width: 60%;
+    margin-top:5% ;
+}
+
+/* descrição da empresa */
+.descricaoBanner{
+    font-size: 1.43em;
+    margin-top:7% ;
+    
+}
+
+/* informação sobre promoções */
+.promocoesBanner{
+    font-size: 1.1em;
+    width: 50%;
+    color: #951113;
+    font-weight: 400;
+    margin-bottom:8%;
+}
+
+/* botão de comprar agora */
+.compreAgoraBanner{
+    background-color: #951113 ;
+    border: none;
+    height: 10%;
+    width: 44%;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #ECCDCA;
+    margin-bottom:8%;
+    cursor: pointer;
+}
+
+/* fim do banner */
+
+
+/* inicio da sessão de produtos */
+
+/* div que engloba a faixa com descriãos dos melhores preços e os cards. */
+.produtos{
+    height:150vw ;
+    max-height: 2650px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* faixa rosa com frase */
+.descricaoProdutos{
+    width: 100%;
+    background-color: #D28E83;
+    height: 5%;
+    max-height:110px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: .95em;
+}
+
+/* definindo textos em negritos e normais */
+.textoNegrito{
+    font-weight: 700;
+}
+.textoSimples{
+    font-weight: 400;
+}
+
+/* div onde ficam todos os cards */
+.cardsProdutos{
+    width: 86%;
+    max-width: 1490px;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+
+/* estilização dos cards */
+.card{
+    background-color: #FFF7F2;
+    width: 32.5%;
+    height:43vw;
+    max-height: 737px;
+    border-radius: 13em 13em 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* estilização dos cards quando o mouse sobre o mesmo*/
+.card:hover{
+    background-color: #FFF7F2;
+    width: 32.5%;
+    height:43vw;
+    max-height: 737px;
+    border-radius: 13em 13em 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 10px #cfcfcf98;
+}
+.card:hover .imagemCard{
+    width: 85%;
+    margin-top: 1.5%;
+    border: .7em solid #D28E83;
+    border-radius: 12em 12em 12em 12em; 
+}
+.card:hover #descricaoServico{
+    color: #951113;
+}
+.card:hover #sessoes{
+    color: #951113;
+}
+.card:hover #descricaoCard3{
+    color: #951113;
+}
+.card:hover .comprar {
+    background-color: #951113;
+    color: #ffffff;
+}
+
+
+/* estilização das imagens de todos os cards */
+.imagemCard{
+    width: 85%;
+    margin-top: 1.5%;
+    border: .7em solid white;
+    border-radius: 12em 12em 12em 12em;
+}
+/* estilização das imagens de todos os cards quando o mouse sobre a mesma */
+
+/* estilização da descricao do serviço de todos os cards */
+#descricaoServico{
+    color: #D28E83;
+    font-size: 1em;
+}
+
+/* estilização da descricao do serviço do card 3 que necessita de uma quebra de linha*/
+#descricaoCard3{
+    color: #D28E83;
+    font-size: 1em;
+    width: 82%;
+    margin-left:12% ;
+}
+
+/* descricao do numero de sessões de todos os cards */
+#sessoes{
+    margin-top:-6%;
+    color: #D28E83;
+    font-size: .9em;
+}
+
+/* estilização dos valores do serviço de todos os cards*/
+.precos{
+    color: #707070;
+    font-weight: 500;
+    font-size: .9em ;
+}
+
+/* estilização de linha dos valores antigos do serviço de todos os cards*/
+.precosRiscado{
+    text-decoration-line: line-through;
+}
+
+
+/* estilização dos botões de comprar de todos os cards*/
+.comprar{
+    background-color: #D28E83 ;
+    border: none;
+    height: 7%;
+    width: 55%;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #951113;
+    margin-bottom:8%;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+}
+
+/* fim da sessão de produtos */
+
+/* inicio da sessão de compras */
+
+/* div com fundo da imagem e campos de compra */
+.areaDeCompra{
+    background-image:url("./assets/fundoCompreAgora.png") ;
+    background-size: cover;
+    width: 100%;
+    height: 60vw;
+    background-color:#f7f6f4 ;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* div com campos de compra */
+.dadosDaCompra{
+    width: 45%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    padding-top: 1.5em;
+}
+
+/* label dos campos de compra */
+.nomeDoCampo{
+    font-size: 1em;
+    width: 49%;
+}
+/* inputs dos campos de compra */
+.camposDeCompra{
+    display: block;
+    border: none;
+    width: 90%;
+    height: 55px;
+    align-items: flex-start;
+    padding-left: 2em;
+    font-size: .8em;
+    margin-top: 3%;
+    outline: none;
+}
+
+/* selects dos campos de compra */
+.selectDeCompra{
+    display: block;
+    border: none;
+    width: 100%;
+    height: 55px;
+    align-items: flex-start;
+    padding-left: 2em;
+    font-size: .8em;
+    margin-top: 3%;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+/* selects do pacote de compra*/
+#campoDePacote{
+    width: 100%;
+}
+
+/* titulo compre agora mesmo! */
+#compreAgora{
+    color: #951113;
+    font-size: 1.3em;
+    margin-bottom: -5%;
+}
+
+/* botão compre agora */
+#botaocompreAgora{
+    color: #ffffff;
+    width: 49%;
+    margin: 3% 0 0 0;
+    height: 55px;
+}
+
+/* botão de outros valores*/
+#outrosValores{
+    background-image: url(/assets/whatsappIcon.png);
+    background-repeat: no-repeat;
+    background-color: #000000 ;
+    background-position-y:center;
+    background-position-x: 10%;
+    color: #ffffff;
+    font-size: 1em;
+    width: 49%;
+    margin: 3% 0 0 0;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* fim da sessão de compras */
+
+/* rodapé que inclui logo link do site e redes */
+.rodape{
+    background-color: #D28E83 ;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* media query de laptops grandes */
+@media (max-width:1440px){
+    /* definindo o tamanho das fontes */
+    body{
+        font-size: 18px;
+    }
+    /* ajustando o tamanho da div do banner*/
+    .logoEDescricoes{
+        height: 80%;
+    }
+    /* ajustando o tamanho do botão de comprar do banner*/
+    .compreAgoraBanner{
+        width: 50%;
+        height: 12%;
+    }
+    /* ajustando altura da sessão de produtos */
+    .produtos{
+        height: 150vw;
+        min-height: 0px;
+    }
+    /* ajustando a quebra de linha do card 3 */
+    #descricaoCard3{
+        width: 100%;
+        margin-left: 3%;
+    }
+    /* ajustando largura da div com os campos de compra */
+    .dadosDaCompra{
+        width: 70%;
+    } 
+}
+
+/* media query de laptops pequenos */
+@media (max-width:1024px){
+    /* definindo o tamanho das fontes */
+    body{
+        font-size: 13px;
+    }
+    /* ajustando largura da div com os campos de compra */
+    .dadosDaCompra{
+        width: 70%;
+        min-height: 400px;
+    }
+}
+
+/* media query de tablets e dispositivos menores */
+@media (max-width:768px){
+    /* definindo o tamanho das fontes */
+    body{
+        font-size: 10px;
+    }
+    /* definindo altura minima da div com os campos de compra */
+    .areaDeCompra{
+        min-height: 330px;
+    }
+    /* ajustando largura e altura da div com os campos de compra */
+    .dadosDaCompra{
+        width: 70%;
+        min-height: 290px;
+        margin-top: 5%;
+    }
+     /* ajustando altura dos campos de compra */
+    .camposDeCompra, .selectDeCompra, #botaocompreAgora, #outrosValores{
+        height: 30px;
+    }
+}
+
+/* media query para celulares grandes*/
+@media (max-width:425px){
+    /* definindo o tamanho das fontes */
+    body{
+        font-size: 7px;
+    }
+    /* definindo o tamanho do banner e alinhando imagem */
+    .banner{
+        min-height: 360px;
+        background-position-x:65% ;
+    }
+    /* definindo largura e tamanho da fonte do texto do banner */
+    .logoEDescricoes{
+        width: 90%;
+        font-size: 1.8em;
+    }
+    /* definindo o tamanho das fonte e altura da div que separa o banner de produtos */
+    .descricaoProdutos{
+        height: 400px;
+        font-size: 1.8em; 
+    }
+    /* definindo largura do texto da div acima*/
+    #textoMelhoresPrecos{
+        width: 80%;
+    }
+    /* definindo altura minima da div de produtos */
+    .produtos{
+        min-height: 1400px;
+    }
+    /* diminuindo tanhanho da borda das imagens dos cards */
+    .imagemCard{
+        border: .5em solid white;
+    }
+    /* diminuindo tanhanho da borda das imagens dos cards */
+    .cardsProdutos{ 
+        width: 95%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        padding-left:5% ;
+    }
+   /* ajustando tamanhos dos cards e adicionando propriedades para funcionamento do scroll */
+    .card{
+        font-size: 1.5em;
+        width: 60vw;
+        height: 92vw;
+        border-radius: 23em 23em 0px 0px;
+        flex: 0 0 auto; 
+        margin: 0 5px 0 5px ;
+    }
+    /* estilização dos cards quando o mouse sobre o mesmo*/
+    .card:hover{
+        font-size: 1.5em;
+        width: 60vw;
+        height: 92vw;
+        border-radius: 23em 23em 0px 0px;
+        box-shadow: 10px 10px 10px #cfcfcf98;
+    }
+    .card:hover .imagemCard{
+        width: 85%;
+        margin-top: 1.5%;
+        border: .7em solid #D28E83;
+        margin-top: 0%;
+        border-radius: 22em 22em 22em 22em;
+    }
+    /* ajuste na borda das imagens dos cards*/
+    .imagemCard{
+        margin-top: 1.5%;
+        border-radius: 22em 22em 22em 22em;
+    }
+    /* definindo altura minima da area de compra e posição da imagem de fundo*/
+    .areaDeCompra{
+        min-height: 900px;
+        background-position-x: 14% ;
+    }
+    /* tamanho do titulo da sessão de compre agora*/
+    #compreAgora{
+        font-size: 4em;
+    }
+    /* definindo tamanho e fontes da sessão de compre agora*/
+    .dadosDaCompra{
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        font-size: 3em;
+    }
+    /* alterando o tamanho da label para ocupar todo espaco da div */
+    .nomeDoCampo{
+        width: 100%;
+        
+    }
+    /* alterando o tamanho dos inputs para ocupar todo espaco da div */
+    .camposDeCompra{
+        width: 88%;
+        height: 55px;
+    }
+    /* alterando o tamanho dos selects para ocupar todo espaco da div */
+    .selectDeCompra{
+        width: 100%;
+        height: 55px;
+    }
+    /* alterando o display para column no rodapé*/
+    .rodape{
+        min-height:330px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 4em;
+    }
+    /* alterando o tamanho dos botões para ocupar todo espaco da div */
+    #botaocompreAgora{
+        width: 100%;
+        height: 55px;
+    }
+    #outrosValores{
+        width: 100%;
+        height: 55px;
+    }
+    
+}
+
+/* media query para celulares médios*/
+@media (max-width:375px){
+    /* definindo altura minima da div de produtos */
+    .produtos{
+        min-height: 1300px;
+    }
+    
+}
+
+/* media query para celulares pequenos*/
+@media (max-width:320px){
+    /* definindo altura minima da div de produtos */
+    .produtos{
+        min-height: 1100px;
+    }
+}
+
+
