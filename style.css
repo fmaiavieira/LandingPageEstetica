@@ -56,7 +56,8 @@ body{
 .compreAgoraBanner{
     background-color: #951113 ;
     border: none;
-    height: 10%;
+    height: 45px;
+    min-height: 40px;
     width: 44%;
     border-radius: 5px;
     font-size: 1em;
@@ -336,7 +337,9 @@ body{
     /* ajustando o tamanho do botão de comprar do banner*/
     .compreAgoraBanner{
         width: 50%;
+        min-width: 95px;
         height: 12%;
+        height: 45px;
     }
     /* ajustando altura da sessão de produtos */
     .produtos{
