@@ -339,7 +339,7 @@ body{
         width: 50%;
         min-width: 95px;
         height: 12%;
-        height: 45px;
+        min-height: 40px;
     }
     /* ajustando altura da sessão de produtos */
     .produtos{
@@ -370,6 +370,18 @@ body{
     /* definindo o tamanho das fontes */
     body{
         font-size: 10px;
+    }
+    .logoEDescricoes{
+        width:60%;
+    }
+    .compreAgoraBanner{
+        width: 50%;
+        min-width: 95px;
+        height: 12%;
+        min-height: 30px;
+    }
+    #textoMelhoresPrecos{
+        font-size: 1.1em;
     }
     /* definindo altura minima da div com os campos de compra */
     .areaDeCompra{
